@@ -53,9 +53,8 @@ Query order status, either open or history order.
 
 #### HTTP Request
 
-`GET <account-group>/api/pro/v1/{account-category}/order/status?orderId={orderId}`
+`GET <account-group>/api/pro/v1/cash/order/status?orderId={orderId}`
 
-Set `account-category` to`cash` for cash account
 #### Request Parameters
 
 Name       | Type      | Required | Value Range                              | Description

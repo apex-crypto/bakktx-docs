@@ -35,9 +35,8 @@ This API returns all current history orders for the account specified. If you ne
 
 #### HTTP Request
 
-`GET <account-group>/api/pro/v1/{account-category}/order/hist/current`
+`GET <account-group>/api/pro/v1/cash/order/hist/current`
 
-Set `account-category` to`cash` for cash account
 
 #### Signature
 

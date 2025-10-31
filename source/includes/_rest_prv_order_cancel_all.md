@@ -26,9 +26,8 @@ Cancel all current open orders for the account specified, and optional symbol.
 
 #### HTTP Request
 
-`DELETE <account-group>/api/pro/v1/{account-category}/order/all`
+`DELETE <account-group>/api/pro/v1/cash/order/all`
 
-Set `account-category` to`cash` for cash account
 
 #### Signature
 

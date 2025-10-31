@@ -124,33 +124,6 @@ For cash
             "sn": 16823297563,
             "transactTime": 1616852892564
         }
-    ],
-
-    "balance": [
-        {
-            "data": [
-                {
-                    "asset": "BTMX-S",
-                    "curBalance": "40000.112249285",
-                    "deltaQty": "0.000000007"
-                }
-            ],
-            "eventType": "Btmxmining",
-            "sn": 10888843672,
-            "transactTime": 1617213942176
-        },
-        {
-            "data": [
-                {
-                    "asset": "BTMX-S",
-                    "curBalance": "40000.112249159",
-                    "deltaQty": "0.000000029"
-                }
-            ],
-            "eventType": "Btmxmining",
-            "sn": 10870559479,
-            "transactTime": 1617149141108
-        }
     ]
 }
 ```

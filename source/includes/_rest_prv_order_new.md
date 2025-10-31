@@ -136,9 +136,8 @@ Place a new order.
 
 #### HTTP Request
 
-`POST <account-group>/api/pro/v1/{account-category}/order`
+`POST <account-group>/api/pro/v1/cash/order`
 
-Set `account-category` to`cash` for cash account
 
 #### Signature
 
