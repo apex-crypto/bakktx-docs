@@ -1420,33 +1420,6 @@ If you want to wrap the object in a one-element list, append a comma to the symb
             </span><span class="nl">"sn"</span><span class="p">:</span><span class="w"> </span><span class="mi">16823297563</span><span class="p">,</span><span class="w">
             </span><span class="nl">"transactTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1616852892564</span><span class="w">
         </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-
-    </span><span class="nl">"balance"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"asset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTMX-S"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"curBalance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40000.112249285"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"deltaQty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000007"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-            </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"eventType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Btmxmining"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"sn"</span><span class="p">:</span><span class="w"> </span><span class="mi">10888843672</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"transactTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1617213942176</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                    </span><span class="nl">"asset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTMX-S"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"curBalance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40000.112249159"</span><span class="p">,</span><span class="w">
-                    </span><span class="nl">"deltaQty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000000029"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-            </span><span class="p">],</span><span class="w">
-            </span><span class="nl">"eventType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Btmxmining"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"sn"</span><span class="p">:</span><span class="w"> </span><span class="mi">10870559479</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"transactTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1617149141108</span><span class="w">
-        </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h4 id='request-parameters-2'>Request Parameters</h4>
@@ -1840,9 +1813,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </span></code></pre></div>
 <p>Place a new order.</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>POST &lt;account-group&gt;/api/pro/v1/{account-category}/order</code></p>
-
-<p>Set <code>account-category</code> to<code>cash</code> for cash account</p>
+<p><code>POST &lt;account-group&gt;/api/pro/v1/cash/order</code></p>
 <h4 id='signature'>Signature</h4>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
@@ -2299,9 +2270,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </span></code></pre></div>
 <p>Cancel an existing open order.</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>DELETE &lt;account-group&gt;/api/pro/v1/{account-category}/order</code></p>
-
-<p>Set <code>account-category</code> to <code>cash</code> for cash account</p>
+<p><code>DELETE &lt;account-group&gt;/api/pro/v1/cash/order</code></p>
 <h4 id='signature'>Signature</h4>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
@@ -2394,9 +2363,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </span></code></pre></div>
 <p>Cancel all current open orders for the account specified, and optional symbol.</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>DELETE &lt;account-group&gt;/api/pro/v1/{account-category}/order/all</code></p>
-
-<p>Set <code>account-category</code> to<code>cash</code> for cash account</p>
+<p><code>DELETE &lt;account-group&gt;/api/pro/v1/cash/order/all</code></p>
 <h4 id='signature'>Signature</h4>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
@@ -2541,9 +2508,7 @@ to obtain the latest status of each order. </p>
 </span></code></pre></div>
 <p>Query order status, either open or history order.</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>GET &lt;account-group&gt;/api/pro/v1/{account-category}/order/status?orderId={orderId}</code></p>
-
-<p>Set <code>account-category</code> to<code>cash</code> for cash account</p>
+<p><code>GET &lt;account-group&gt;/api/pro/v1/cash/order/status?orderId={orderId}</code></p>
 <h4 id='request-parameters'>Request Parameters</h4>
 <table><thead>
 <tr>
@@ -2697,9 +2662,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </span></code></pre></div>
 <p>This API returns all current open orders for the account specified. </p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>GET &lt;account-group&gt;/api/pro/v1/{account-category}/order/open</code></p>
-
-<p>Set <code>account-category</code> to<code>cash</code> for cash account</p>
+<p><code>GET &lt;account-group&gt;/api/pro/v1/cash/order/open</code></p>
 <h4 id='signature'>Signature</h4>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
@@ -2864,9 +2827,7 @@ If you want to wrap the object in a one-element list, append a comma to the symb
 </span></code></pre></div>
 <p>This API returns all current history orders for the account specified. If you need earlier data or more filter, please refer to <a href="#list-history-orders"><strong>Order History API</strong></a>.</p>
 <h4 id='http-request'>HTTP Request</h4>
-<p><code>GET &lt;account-group&gt;/api/pro/v1/{account-category}/order/hist/current</code></p>
-
-<p>Set <code>account-category</code> to<code>cash</code> for cash account</p>
+<p><code>GET &lt;account-group&gt;/api/pro/v1/cash/order/hist/current</code></p>
 <h4 id='signature'>Signature</h4>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
@@ -3995,7 +3956,7 @@ you can use to update the order book snapshot. In the message, <code>price</code
 <tr>
 <td>900001</td>
 <td>HUMAN_CHALLENGE</td>
-<td>Human change do not pass</td>
+<td>Human Challenge do not pass</td>
 </tr>
 </tbody></table>
 
