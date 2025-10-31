@@ -44,9 +44,8 @@ Cancel an existing open order.
 
 #### HTTP Request
 
-`DELETE <account-group>/api/pro/v1/{account-category}/order`
+`DELETE <account-group>/api/pro/v1/cash/order`
 
-Set `account-category` to `cash` for cash account
 
 #### Signature
 

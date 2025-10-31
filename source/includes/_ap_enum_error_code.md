@@ -105,4 +105,4 @@ code   | reason                  | descripion
 
 code   | reason               | descripion
 -------|----------------------|----------
-900001 |HUMAN_CHALLENGE       | Human change do not pass
+900001 |HUMAN_CHALLENGE       | Human Challenge do not pass
